@@ -4,3 +4,7 @@ Aplicação em Python para carregamento das imagens e rótulos da base de dados 
 A base de dados pode ser encontrada no link abaixo:
 
 http://www.decom.ufop.br/csilab/databases/
+
+Instalação de dependências:
+
+pip install opencv-python
