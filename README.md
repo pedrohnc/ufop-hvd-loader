@@ -7,4 +7,4 @@ http://www.decom.ufop.br/csilab/databases/
 
 **Instalação de dependências:**
 
-pip install opencv-python
+pip install numpy opencv-python
