@@ -22,6 +22,7 @@ def main():
     x_test, y_test, labels_test = load_data(RESHAPED_DIR + 'test')
 
     # Prints type and shape
+    print('# Prints type and shape')
     print('x_train')
     print('type:', type(x_train))
     print('shape:', shape(x_train))
@@ -53,17 +54,20 @@ def main():
     print()
 
     # Prints the first pixel of the first training image
-    print('x_train[0]:')
+    print('# Prints the first pixel of the first training image')
+    print('x_train[0][0][0]:')
     print(x_train[0][0][0])
     print()
 
     # Prints one-hot-encoding example
+    print('# Prints one-hot-encoding example')
     print('y_train[0]:')
     print(y_train[0])
     print()
 
     # Prints label example
-    print('labels_train[0]:')
+    print('# Prints label example')
+    print('labels_train[0]')
     print(labels_train[0])
 
     exit(0)
