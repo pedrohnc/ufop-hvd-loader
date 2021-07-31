@@ -55,6 +55,7 @@ class LabelUtils:
 The **main.py** file contains an example of using the application, where the images are resized (only the first time it is run). Then they are read with their labels. Finally, the program prints some information such as the type and shape of each output and an sample of an image, an one-hot-encoding and a label. The second and later runs will be faster than the first, as you won't need to resize the images again.
 
 ```python
+# Prints type and shape
 x_train
 type: <class 'list'>
 shape: (1128, 300, 300, 3)
@@ -79,12 +80,15 @@ y_test
 type: <class 'numpy.ndarray'>
 shape: (232, 12)
 
+# Prints the first pixel of the first training image
 x_train[0][0][0]:
 [0.97254902 0.78431373 0.50196078]
 
+# Prints one-hot-encoding example
 y_train[0]:
 [0. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0.]
 
+# Prints label example
 labels_train[0]:
 label_id: 2
 label_name: sorachi_ace
@@ -96,4 +100,3 @@ width: 300
 img_file_name: /media/share/datasets/lupulo/ufop-hvd-reshaped/train/sorachi_ace_l2_11.jpg
 label_file_name: /media/share/datasets/lupulo/ufop-hvd-reshaped/train/sorachi_ace_l2_11.json
 ```
-
