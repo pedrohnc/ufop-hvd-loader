@@ -31,3 +31,22 @@ def load_data(datasets_path, shape=(300, 300), rescale=1. / 255, seed=None, file
     ...
     return x, y, labels
 ```
+### label.py
+This file contains **Label** and **LabelUtils** classes.
+
+The **Label** class favors the manipulation of bounding boxes since, unlike the Pascal VOC format, they are already normalized (many frameworks prefer this way). In addition, it also reports the index of the largest bounding box (main_boundin_box).
+
+The **LabelUtils** class can be used to save and load xml and json format files.
+
+```python
+class Label:
+
+    def __init__(self, label_id=None, label_name=None, label_description=None, main_bounding_box=None,
+                 bounding_boxes=None, height=None, width=None, img_file_name=None, label_file_name=None):
+        ...
+        
+class LabelUtils:
+
+    ...
+                 
+```
