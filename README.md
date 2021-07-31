@@ -52,7 +52,7 @@ class LabelUtils:
 ```
 ## Usage Example
 
-The **main.py** file contains an example of using the application, where the images are resized (only the first time it is run). Then they are read with their labels. Finally, the program prints some information such as the type and shape of each output and an sample of an image, an one-hot-encoding and a label. The second and later runs will be faster than the first, as you won't need to resize the images again.
+The **main.py** file contains an example of using the application, where the images are resized (only the first time it is run). Then they are read with their labels. Finally, the program prints some information such as the type and shape of each output and an sample of an image, an one-hot-encoding and a label. The second and later runs will be faster than the first, as you won't need to resize the images again. Change the `BASE_DIR` and `RESHAPED_DIR` directories to suit your needs and run the `main()` method to test the application and get an output like the one shown below.
 
 ```python
 # Prints type and shape
@@ -89,7 +89,7 @@ y_train[0]:
 [0. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0.]
 
 # Prints label example
-labels_train[0]:
+labels_train[0]
 label_id: 2
 label_name: sorachi_ace
 label_description: Sorachi Ace
