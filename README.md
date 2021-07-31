@@ -12,6 +12,7 @@ To run this application you need the numpy and opencv packages, which can be ins
 pip install numpy opencv-python
 ```
 
+## Main Classes
 ```python
 def reshape(dataset_path, destiny_path, shape=None, max_dim=None, verbose=1):
     ...
