@@ -50,3 +50,50 @@ class LabelUtils:
     ...
                  
 ```
+## Usage Example
+
+The **main.py** file contains an example of using the application, where the images are resized (only the first time it is run). Then they are read with their labels. Finally, the program prints some information such as the type and shape of each output and an sample of an image, an one-hot-encoding and a label. The second and later runs will be faster than the first, as you won't need to resize the images again.
+
+```python
+x_train
+type: <class 'list'>
+shape: (1128, 300, 300, 3)
+
+y_train
+type: <class 'numpy.ndarray'>
+shape: (1128, 12)
+
+x_validation
+type: <class 'numpy.ndarray'>
+shape: (232, 300, 300, 3)
+
+y_validation
+type: <class 'numpy.ndarray'>
+shape: (232, 12)
+
+x_test
+type: <class 'numpy.ndarray'>
+shape: (232, 300, 300, 3)
+
+y_test
+type: <class 'numpy.ndarray'>
+shape: (232, 12)
+
+x_train[0][0][0]:
+[0.97254902 0.78431373 0.50196078]
+
+y_train[0]:
+[0. 0. 1. 0. 0. 0. 0. 0. 0. 0. 0. 0.]
+
+labels_train[0]:
+label_id: 2
+label_name: sorachi_ace
+label_description: Sorachi Ace
+main_bounding_box: 0
+bounding_boxes: [[0.12003968253968254, 0.31473214285714285, 0.8485449735449735, 0.9590773809523809]]
+height: 300
+width: 300
+img_file_name: /media/share/datasets/lupulo/ufop-hvd-reshaped/train/sorachi_ace_l2_11.jpg
+label_file_name: /media/share/datasets/lupulo/ufop-hvd-reshaped/train/sorachi_ace_l2_11.json
+```
+
