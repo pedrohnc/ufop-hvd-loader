@@ -4,7 +4,7 @@ Python application for loading images and labels from the UFOP Hop Varieties Dat
 ## Dataset
 The dataset is available at the link below:
 
-http://www.decom.ufop.br/csilab/databases/
+https://doi.org/10.6084/m9.figshare.14933178
 
 ## Dependencies
 To run this application you need the numpy and opencv packages, which can be installed with the following command:
